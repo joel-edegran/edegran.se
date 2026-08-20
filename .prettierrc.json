@@ -1,0 +1,5 @@
+{
+  "plugins": ["@prettier/plugin-pug"],
+  "pugSingleQuote": false,
+  "pugTabWidth": 2
+  }
