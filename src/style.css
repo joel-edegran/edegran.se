@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-panel {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}

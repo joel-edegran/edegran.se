@@ -1,0 +1,15 @@
+import { defineConfig } from 'vite';
+import vituum from 'vituum';
+import pug from '@vituum/vite-plugin-pug';
+
+export default defineConfig({
+  plugins: [
+    vituum(),
+    pug()
+  ],
+  build: {
+    rollupOptions: {
+      input: ['index.pug']
+    }
+  }
+});

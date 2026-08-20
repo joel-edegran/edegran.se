@@ -1,0 +1,21 @@
+doctype html
+html(lang="sv")
+
+  head
+    meta(charset="UTF-8")
+    meta(
+      name="viewport", 
+      content="width=device-width, initial-scale=1.0"
+    )
+    title edegran.se
+    include src/includes/gtm-head.pug
+
+  body
+    include src/includes/gtm-body.pug
+
+    main.container.hero-container
+      article.card-panel
+        h1 edegran.se
+        p Välkommen till edegran.se
+    
+    script(type="module", src="/src/main.js")
