@@ -1,16 +1,45 @@
-html, body {
-  height: 100%;
-}
+html,
+body
+  height 100%
+  margin 0
 
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
+body
+  font-family "Courier New", Courier, monospace // Standard typewriter font
+  font-size 16px
+  font-weight 400
+  letter-spacing 0.05em       // Distinct character spacing for vintage feel
+  line-height 1.4
 
-.card-panel {
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-}
+.container
+  margin-top: 0
+  margin-left: @margin-top
+  padding-top: 1rem
+  padding-left: @padding-top
+
+.hero-container
+  display flex
+  align-items flex-start     // Align panel to top
+  justify-content flex-start  // Align panel to left
+  min-height 100vh
+
+.card-panel
+  text-align left             // Left-aligned text
+  width auto                  // Adapt size to content
+  max-width 500px
+  text-shadow 0.3px 0.3px 0 rgba(0, 0, 0, 0.6) // Subtle ink bleed effect
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p
+    font-family inherit
+    font-size 1rem
+    font-weight 400
+    margin: 1rem 0 0 0
+    padding 0
+    color inherit
+    text-transform none
+
+    &:first-child
+      margin-top: 0

@@ -6,10 +6,5 @@ export default defineConfig({
   plugins: [
     vituum(),
     pug()
-  ],
-  build: {
-    rollupOptions: {
-      input: ['index.pug']
-    }
-  }
+  ]
 });
