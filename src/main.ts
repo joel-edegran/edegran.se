@@ -1,4 +1,4 @@
-import '@picocss/pico/css/pico.min.css';
+import '@picocss/pico';
 import './style.styl'
 
 console.log('edegran.se loaded successfully');
