@@ -1,35 +1,5 @@
-doctype html
-html(lang="sv")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title edegran.se
-    link(
-      rel="icon",
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>"
-    )
-    include ../includes/gtm-head.pug
+extends ../layouts/layout.pug
 
-  body
-    include ../includes/gtm-body.pug
-
-    main.container.hero-container
-      article.card-panel
-        h1 edegran.se
-        p Välkommen till edegran.se
-        nav.profile-links
-          ul
-            li
-              a.profile-link(
-                href="https://github.com/joel-edegran",
-                target="_blank",
-                rel="noopener noreferrer"
-              ) GitHub
-            li
-              a.profile-link(
-                href="https://www.freecodecamp.org/joel-edegran",
-                target="_blank",
-                rel="noopener noreferrer"
-              ) freeCodeCamp
-
-    script(type="module", src="/src/main.ts")
+block content
+  main.container.hero-container
+    include ../includes/welcome.pug

@@ -1,0 +1,12 @@
+include ../includes/config.pug
+
+doctype html
+html(lang="sv")
+  include ../includes/head.pug
+
+  body
+    include ../includes/gtm-body.pug
+
+    block content
+
+    script(type="module", src="/src/main.ts")
