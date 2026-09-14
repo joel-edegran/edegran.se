@@ -1,5 +1,8 @@
-extends ../layouts/layout.pug
+extends ../layouts/default.pug
 
 block content
   main.container.hero-container
-    include ../includes/welcome.pug
+    article.card-panel
+      h1= siteTitle
+      p= siteDescription
+      include ../components/profile-links.pug
