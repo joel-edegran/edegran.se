@@ -1,9 +1,4 @@
-nav.profile-links
-  ul
-    each link in profileLinks
-      li
-        a.profile-link(
-          href=link.url,
-          target="_blank",
-          rel="noopener noreferrer"
-        )= link.name
+ul.profile-links-list
+  each link in profileLinks
+    li.profile-links-list-item
+      a.profile-link(href=link.url, target="_blank", rel="noopener noreferrer")= link.name

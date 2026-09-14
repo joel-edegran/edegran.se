@@ -1,7 +1,17 @@
 {
-  "plugins": ["@prettier/plugin-pug"],
+  "plugins": ["@prettier/plugin-pug", "prettier-plugin-stylus"],
   "semi": false,
   "pugSemi": false,
   "pugSingleQuote": false,
-  "pugTabWidth": 2
-  }
+  "pugTabWidth": 2,
+  "overrides": [
+    {
+      "files": "*.styl",
+      "options": {
+        "parser": "stylus",
+        "singleQuote": true,
+        "semi": false
+      }
+    }
+  ]
+}
